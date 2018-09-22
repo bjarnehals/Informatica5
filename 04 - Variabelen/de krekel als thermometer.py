@@ -5,5 +5,3 @@ Tc = 10 + ((N60 - 40) / 7)
 
 print('temperatuur (Fahrenheit): ' + str(Tf))
 print('temperatuur (Celsius): ' + str(Tc))
-
-
