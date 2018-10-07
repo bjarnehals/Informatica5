@@ -32,9 +32,13 @@ else:
 # uitkomst bepalen
 if grootst_a > grootst_b and groot_a > groot_b:
     antwoord = 'aanvaller verliest 0 legers, verdediger verliest 2 legers'
-elif (grootst_a < grootst_b and groot_a > groot_b) or (grootst_a > grootst_b and groot_a < groot_b) or (grootst_a == grootst_b and groot_a > groot_b) or (grootst_a > grootst_b and groot_a == groot_b):
+elif (grootst_a < grootst_b and groot_a > groot_b) or (grootst_a > grootst_b and groot_a < groot_b)
     antwoord = 'aanvaller verliest 1 leger, verdediger verliest 1 leger'
-elif (grootst_a == grootst_b and groot_a == groot_b) or (grootst_a < grootst_b and groot_a < groot_b) or (grootst_a == grootst_b and groot_a < groot_b) or (grootst_a < grootst_b and groot_a == groot_b):
+elif (grootst_a == grootst_b and groot_a > groot_b) or (grootst_a > grootst_b and groot_a == groot_b):
+    antwoord = 'aanvaller verliest 1 leger, verdediger verliest 1 leger'
+elif (grootst_a == grootst_b and groot_a == groot_b) or (grootst_a < grootst_b and groot_a < groot_b)
+    antwoord = 'aanvaller verliest 2 legers, verdediger verliest 0 legers'
+elif (grootst_a == grootst_b and groot_a < groot_b) or (grootst_a < grootst_b and groot_a == groot_b):
     antwoord = 'aanvaller verliest 2 legers, verdediger verliest 0 legers'
 else:
     antwoord = 'aanvaller verliest 2 legers, verdediger verliest 0 legers'
