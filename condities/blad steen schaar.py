@@ -1,23 +1,9 @@
-keuze_1 = input('geef het eerste: ')
-keuze_2 = input('geef het tweede: ')
+s1 = input('speler 1: ')
+s2 = input('speler 2: ')
 
-if keuze_1 == 'blad' and keuze_2 == 'blad':
-    winnaar = 'onbeslist'
-elif keuze_1 == 'blad' and keuze_2 == 'steen':
-    winnaar = 'speler 1 wint'
-elif keuze_1 == 'blad' and keuze_2 == 'schaar':
-    winnaar = 'speler 2 wint'
-elif keuze_1 == 'steen' and keuze_2 == 'blad':
-    winnaar = 'speler 2 wint'
-elif keuze_1 == 'steen' and keuze_2 == 'schaar':
-    winnaar = 'speler 1 wint'
-elif keuze_1 == 'steen' and keuze_2 == 'steen':
-    winnaar = 'onbeslist'
-elif keuze_1 == 'schaar' and keuze_2 == 'schaar':
-    winnaar = 'onbeslist'
-elif keuze_1 == 'schaar' and keuze_2 == 'steen':
-    winnaar = 'speler 2 wint'
-elif keuze_1 == 'schaar' and keuze_2 == 'blad':
-    winnaar = 'speler 1 wint'
-
-print(winnaar)
+if s1 == s2:
+    print('onbeslist')
+elif (s1 == 'blad' and s2 == 'schaar') or (s1 == 'steen' and s2 == 'blad') or (s1 == 'schaar' and s2 == 'steen'):
+    print('speler 2 wint')
+else:
+    print('speler 1 wint')
