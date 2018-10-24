@@ -1,15 +1,15 @@
-aantal_getallen = int(input('hoeveel getallen? '))
+aantal = int(input('hoeveel getallen? '))
 
-som = 0
-grootst = -1000
+# eerste getal buiten de lus vragen, dan heb je direct al een grootste getal.
+grootste = int(input('geef getal: '))
+som = grootste
 
-for i in range(0, aantal_getallen):
+# aantal-1 want je eerste getal is al gegeven.
+for i in range(aantal-1):
     getal = int(input('geef een getal: '))
+    grootste  = max(grootste, getal)
     som += getal
-    if getal > grootst:
-        grootst = getal
-    gemiddelde = som/aantal_getallen
 
-print('Het grootste getal is {} en het gemiddelde is {:.2f}'.format(grootst, gemiddelde))
+print('Het grootste getal is {} en het gemiddelde is {:.2f}'.format(grootste, som / aantal))
 
 
