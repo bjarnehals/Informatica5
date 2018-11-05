@@ -1,14 +1,14 @@
 from random import randint
-getal = randint(1, 100)
+getal = randint
 
 begin = 1
 eind = 100
 pogingen = 0
 
-gok = randint(1, 100)
+gok = randint
 
 while gok != getal:
-    gok = randint(begin, eind)
+    gok = randint
     print('[{}, {}] --> computer gokt {}'.format(begin, eind, gok))
     if gok < getal:
         begin = gok + 1
