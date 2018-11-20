@@ -1,2 +1,7 @@
-for i in range(11):
-    print('Ik zal meer dan twee oefeningen programmeren maken!')
+getal = int(input('geef een getal: '))
+
+som = 0
+
+for deler in range(0, getal):
+    if getal % deler == 0:
+        
