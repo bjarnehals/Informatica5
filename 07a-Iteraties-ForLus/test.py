@@ -1,7 +1,9 @@
 getal = int(input('geef een getal: '))
 
-som = 0
+aantal = 0
 
-for deler in range(0, getal):
-    if getal % deler == 0:
-        
+for deler in range(1, getal):
+    if getal % deler == aantal:
+        som += deler
+
+print(som)
