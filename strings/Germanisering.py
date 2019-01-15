@@ -7,4 +7,9 @@ def germaniseer(zin):
             nieuwe_zin += zin[i]
     return nieuwe_zin
 
-print(germaniseer('Hallo ik ben bjarne'))
+
+
+
+
+
+
